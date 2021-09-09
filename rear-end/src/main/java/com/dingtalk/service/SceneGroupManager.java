@@ -48,7 +48,6 @@ public class SceneGroupManager {
         req.setTitle(title);
         req.setTemplateId(TemplateConfig.getGroupTemplateId());
         OapiImChatScenegroupCreateResponse rsp = client.execute(req, accessToken);
-        System.out.println(rsp.getBody());
         if(rsp.getSuccess()){
             return rsp.getResult().getOpenConversationId();
         }
@@ -79,7 +78,7 @@ public class SceneGroupManager {
                 .setConversationType(1)
                 .setCardData(cardData);
         SendInteractiveCardResponse rsp = client.sendInteractiveCardWithOptions(request, sendInteractiveCardHeaders, new RuntimeOptions());
-        System.out.println("sendCardMsg rsp : " + JSON.toJSONString(rsp));
+        log.info("\nsendCardMsg rsp: {} ", JSON.toJSONString(rsp));
         if(rsp.body.success){
             return randomString;
         }
@@ -108,7 +107,7 @@ public class SceneGroupManager {
                 .setCardData(cardData);
         try {
             InteractiveCardCreateInstanceResponse rsp = client.interactiveCardCreateInstanceWithOptions(interactiveCardCreateInstanceRequest, interactiveCardCreateInstanceHeaders, new RuntimeOptions());
-            System.out.println("createTopCard rsp: " + JSON.toJSONString(rsp));
+            log.info("\ncreateTopCard rsp: {} ", JSON.toJSONString(rsp));
         } catch (TeaException err) {
             if (!Common.empty(err.code) && !Common.empty(err.message)) {
                 log.error("createTopCard err!!! code:{} \n msg:{} ", err.code, err.message);
@@ -137,7 +136,7 @@ public class SceneGroupManager {
         try {
             topboxOpenResponse = client.topboxOpenWithOptions(topboxOpenRequest, topboxOpenHeaders, new RuntimeOptions());
         } catch (TeaException err) {
-            if (!com.aliyun.teautil.Common.empty(err.code) && !com.aliyun.teautil.Common.empty(err.message)) {
+            if (!Common.empty(err.code) && !Common.empty(err.message)) {
                 log.error("createTopCard err!!! code:{} \n msg:{} ", err.code, err.message);
             }
         }
@@ -164,7 +163,7 @@ public class SceneGroupManager {
         try {
             topboxCloseResponse = client.topboxCloseWithOptions(topboxCloseRequest, topboxCloseHeaders, new RuntimeOptions());
         } catch (TeaException err) {
-            if (!com.aliyun.teautil.Common.empty(err.code) && !com.aliyun.teautil.Common.empty(err.message)) {
+            if (!Common.empty(err.code) && !Common.empty(err.message)) {
                 log.error("createTopCard err!!! code:{} \n msg:{} ", err.code, err.message);
             }
         }
@@ -191,7 +190,7 @@ public class SceneGroupManager {
                 .setCardData(cardData)
                 .setUserIdType(1);
         UpdateInteractiveCardResponse rsp = client.updateInteractiveCardWithOptions(updateInteractiveCardRequest, updateInteractiveCardHeaders, new RuntimeOptions());
-        log.info("update msg rsp:{}", rsp);
+        log.info("\nupdate msg rsp:{}", rsp);
         return rsp;
     }
 

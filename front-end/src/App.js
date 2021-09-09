@@ -131,7 +131,7 @@ class App extends React.Component{
     })
   }
   loginAction(corpId) {
-    alert("corpId: " +  corpId);
+    // alert("corpId: " +  corpId);
     let _this = this;
     dd.runtime.permission.requestAuthCode({
       corpId: corpId,//企业 corpId

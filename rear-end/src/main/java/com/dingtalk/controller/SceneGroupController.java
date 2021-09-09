@@ -79,8 +79,8 @@ public class SceneGroupController {
     @RequestMapping("/complete")
     @PostMapping
     public RpcServiceResult complete(@RequestParam String groupId, @RequestParam String topCardId) throws Exception {
-        TopboxCloseResponse rsp = sceneGroupManager.closeTopCard("cidAnpiJudbB0R41tsOOFR/LA==", topCardId);
-        log.info("complete rsp: {}", rsp);
+        TopboxCloseResponse rsp = sceneGroupManager.closeTopCard(groupId, topCardId);
+        log.info("\ncomplete rsp: {}", JSON.toJSONString(rsp));
         return RpcServiceResult.getSuccessResult(null);
     }
 }
