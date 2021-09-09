@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  forward-headers-strategy: FRAMEWORK
+app:
+  app_key: ${appKey}
+  app_secret: ${appSecret}
+  corp_id: ${corpId}
+  agent_id: ${agentId}
+groupTemplateId: ${groupTemplateId}
+botTemplateId: ${botTemplateId}
+cardTemplateId: ${cardTemplateId}
+
