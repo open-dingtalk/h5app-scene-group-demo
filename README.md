@@ -22,7 +22,7 @@
 
      https://developers.dingtalk.com/document/resourcedownload/http-intranet-penetration
 
-![image-20210706171740868](https://img.alicdn.com/imgextra/i4/O1CN01C9ta8k1L3KzzYEPiH_!!6000000001243-2-tps-953-517.png)
+![image-20210706171740868](https://img.alicdn.com/imgextra/i1/O1CN015ZmCJ31jN4sCKXpNa_!!6000000004535-2-tps-1133-551.png)
 
 
 
@@ -32,7 +32,7 @@
 
 ​	”成员信息读权限“、“chat相关接口的管理权限”
 
-![image-20210706172027870](https://img.alicdn.com/imgextra/i3/O1CN016WCr6428wDdBhkWi6_!!6000000007996-2-tps-1358-571.png)
+![image-20210706172027870](https://img.alicdn.com/imgextra/i2/O1CN014fd6zp1O62CmoD14b_!!6000000001655-2-tps-1378-599.png)
 
 5. 创建场景群模版：https://developers.dingtalk.com/document/chatgroup/fill-in-a-group-template
 
