@@ -104,49 +104,33 @@ npm run build
 
 ### 运行展示
 
-![image-20210909163138817](https://img.alicdn.com/imgextra/i1/O1CN01H9snal1vnR2yGfZIa_!!6000000006217-2-tps-330-408.png)
+![6](https://img.alicdn.com/imgextra/i3/O1CN01R0Xgm81UZF9wCQaJy_!!6000000002531-2-tps-497-572.png)
 
-应用首页
-
-![image-20210909164323214](https://img.alicdn.com/imgextra/i1/O1CN01ySFRdg1HwWGu1Wx74_!!6000000000822-2-tps-324-504.png)
-
-自动登录
-
-![image-20210909163811222](https://img.alicdn.com/imgextra/i1/O1CN01lPTDkn1RWXy6CNZ93_!!6000000002119-2-tps-328-518.png)
-
-点击“建群”按钮
+建群操作
 
 ![image-20210909164100930](https://img.alicdn.com/imgextra/i4/O1CN01GwFceT27LkUcaYELO_!!6000000007781-2-tps-341-639.png)
 
-相关场景群自动创建（群名称、群成员可在程序中自行修改设置）
+相关场景群自动创建
 
-![image-20210909164358523](https://img.alicdn.com/imgextra/i4/O1CN01sQ7bWp28A83eRywdQ_!!6000000007891-2-tps-327-392.png)
+![3](https://img.alicdn.com/imgextra/i1/O1CN01t8pdph1pyzLx0CsMR_!!6000000005430-2-tps-496-400.png)
 
-点击推送按钮，相关信息被机器人推送到群中
+发送卡片消息
 
 ![image-20210909164930643](https://img.alicdn.com/imgextra/i4/O1CN01w0bMqC1SnK5hm28Wr_!!6000000002291-2-tps-335-465.png)
 
-卡片的格式来自卡片模版（卡片消息内容可在程序中自行修改设置）
+群内机器人发送消息
 
-![image-20210909164955785](https://img.alicdn.com/imgextra/i3/O1CN01j7woYJ1pzu8HNZxwy_!!6000000005432-2-tps-323-373.png)
+![1 ](https://img.alicdn.com/imgextra/i2/O1CN01tDJJLV22Vl53jgTyp_!!6000000007126-2-tps-497-586.png)
 
 点击更新消息
 
 ![image-20210909164543933](https://img.alicdn.com/imgextra/i4/O1CN01L5dz6Z1elHiUfHf6D_!!6000000003911-2-tps-331-478.png)
 
-卡片内容被更新
-
-![image-20210909165058895](https://img.alicdn.com/imgextra/i3/O1CN01W7LgUb24f2K5vEV5s_!!6000000007417-2-tps-341-400.png)
-
-点击消息“置顶卡片”
+机器人更新消息
 
 ![image-20210909165213720](https://img.alicdn.com/imgextra/i1/O1CN01sM0TDV1VE0OYzQiaC_!!6000000002620-2-tps-330-238.png)
 
 发送一张群置顶的消息卡片
-
-![image-20210909165419857](https://img.alicdn.com/imgextra/i4/O1CN01GMJXoc1n2hhv6oi9R_!!6000000005032-2-tps-334-209.png)
-
-点击更新置顶卡片，置顶卡片内容也随之更新，点击关闭置顶卡片即可关闭
 
 
 

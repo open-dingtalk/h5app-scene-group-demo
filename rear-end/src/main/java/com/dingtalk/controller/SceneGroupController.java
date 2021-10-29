@@ -42,6 +42,7 @@ public class SceneGroupController {
     @RequestMapping("/sendIm")
     @PostMapping
     public RpcServiceResult sendIm(@RequestParam String groupId, @RequestParam String msg) throws Exception {
+        log.info("sendIm groupId: {}, msg:{}", groupId, msg);
         Map<String, String> map = new HashMap<>();
         map.put("msg", msg);
         map.put("content", "故障信息：");
@@ -54,6 +55,7 @@ public class SceneGroupController {
     @RequestMapping("/sendMsg")
     @PostMapping
     public RpcServiceResult sendMsg(@RequestParam String groupId, @RequestParam String msg) throws Exception {
+        log.info("sendMsg groupId: {}, msg:{}", groupId, msg);
         Map<String, String> map = new HashMap<>();
         map.put("msg", msg);
         map.put("content", "故障信息：");
@@ -67,6 +69,7 @@ public class SceneGroupController {
     @RequestMapping("/updateMsg")
     @PostMapping
     public RpcServiceResult updateMsg(@RequestParam String cardId, @RequestParam String msg) throws Exception {
+        log.info("updateMsg cardId: {}, msg:{}", cardId, msg);
         Map<String, String> map = new HashMap<>();
         map.put("msg", msg);
         map.put("content", "故障信息：");
@@ -79,6 +82,7 @@ public class SceneGroupController {
     @RequestMapping("/complete")
     @PostMapping
     public RpcServiceResult complete(@RequestParam String groupId, @RequestParam String topCardId) throws Exception {
+        log.info("\ncomplete groupId: {}, topCardId:{}", groupId, topCardId);
         TopboxCloseResponse rsp = sceneGroupManager.closeTopCard(groupId, topCardId);
         log.info("\ncomplete rsp: {}", JSON.toJSONString(rsp));
         return RpcServiceResult.getSuccessResult(null);

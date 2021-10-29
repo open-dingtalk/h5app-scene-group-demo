@@ -27,4 +27,10 @@ public class RandomUtil {
         }
         return buffer.toString();
     }
+
+    public static void main(String[] args) {
+        String randomString = getRandomString(12432);
+        System.out.println(randomString);
+
+    }
 }
