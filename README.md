@@ -30,7 +30,7 @@
 
 本demo使用接口相关权限：
 
-- 场景群——chat相关
+​	”成员信息读权限“、“chat相关接口的管理权限”
 
 ![image-20210706172027870](https://img.alicdn.com/imgextra/i3/O1CN016WCr6428wDdBhkWi6_!!6000000007996-2-tps-1358-571.png)
 
