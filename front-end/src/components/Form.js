@@ -22,7 +22,7 @@ const Work = (props) => {
         )}
         {(props.showType === 2 || props.showType === 3) && (
           <Form.Item
-            label="卡片消息"
+            label={props.showType === 2 ? "卡片消息" : "更新卡片消息"}
             name="msg"
             rules={[{ required: true, message: "请输入卡片消息内容" }]}
           >
@@ -31,7 +31,7 @@ const Work = (props) => {
         )}
         {(props.showType === 4 || props.showType === 5) && (
           <Form.Item
-            label="置顶卡片消息"
+            label={props.showType === 4 ? "置顶卡片消息" : "更新置顶卡片消息"}
             name="msg"
             rules={[{ required: true, message: "请输入卡片消息内容" }]}
           >
