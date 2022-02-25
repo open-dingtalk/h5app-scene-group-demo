@@ -42,7 +42,7 @@
 
    ![](https://img.alicdn.com/imgextra/i4/O1CN01DbuTUs1LWeMSsT0vo_!!6000000001307-2-tps-1228-246.png)
 
-7. 创建消息模版：https://developers.dingtalk.com/document/chatgroup/create-message-templat
+7. 创建消息模版：https://developers.dingtalk.com/document/chatgroup/create-message-template
 
   **请注意，在此demo中，我们需要在消息模版中设置三个数据源变量：（不设置无法发送消息）**
   
